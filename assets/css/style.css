@@ -1,1 +1,26 @@
+.letter {
+  display: inline-block;
+  list-style: none;
+  width: 20px;
+  margin: 0 5px;
+  border-bottom: 1px solid black;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+.current-word {
+    list-style: none;
+    font-size: 20px;
+    text-align: center;
+}
+.panel {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  max-width: 700px;
+  text-align: center;
+}
 
+.jumbotron {
+  text-align: center;
+}

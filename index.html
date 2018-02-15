@@ -7,10 +7,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
-  <script src="/javascript/game.js"></script>
-  <link rel="stylesheet" src="/css/normalize.css">
+  <script src="assets/javascript/game.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" src="/css/style.css">  
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <title>Hangman</title>
 </head>
 <body>
@@ -22,15 +22,12 @@
             <div class="panel panel-default">
                 <div class="panel-body">
                   <h3>Press any key to get started!</h3><br><br>
-                  <h3>Wins</h3><br><br>
+                  <h3>Wins</h3><br>
                   <h3 id="wins"></h3><br><br>
-                  <h3 id="currentword">Current Word</h3><br><br>
                         <ul id="letters"></ul>
-                        <p id="hangman"></p>
-                        <p id="output" class="output"></p>
                     <br><br>
-                   <h3>Number of Guesses Remaining</h3> 
-                   <h3 id="remaining">13</h3>
+                   <h3>Number of Guesses Remaining</h3>
+                   <h3 id="remaining"></h3>
                    <br><br>
                    <h3>Letters Already Guessed</h3>
                    <h3 id="guessed"></h3>
