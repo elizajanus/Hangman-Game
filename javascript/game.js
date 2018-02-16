@@ -9,7 +9,6 @@ $(document).ready(function() {
 var wins = 0;
 var lives = 13;
 var words = ["ionian", "dorian", "phrygian", "lydian", "mixolydian", "aeolian", "locrian"];
-var scales = ["ionian.mp3", "dorian.mp3", "phygian.mp3", "lydian.mp3", "mixolydian.mp3","aeolian.mp3", "locrian.mp3"];
 var guesses = [];
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
@@ -24,7 +23,29 @@ $("#remaining").text(lives);
 for (i = 0; i < wordChoice.length; i++) {
             var letter = '<li class="letter"' + wordChoice.charAt(i).toUpperCase() + '">' + wordChoice.charAt(i).toUpperCase() + '</li>';
             letters.insertAdjacentHTML('beforeend', letter);
+        };
+
+        if (wordChoice == words[0]) {
+          $("#ionian").trigger('play')
         }
+          else if (wordChoice == words[1]) {
+            $("#dorian").trigger('play')
+          }
+          else if (wordChoice == words[2]) {
+            $("#phrygian").trigger('play')
+          }
+          else if (wordChoice == words[3]) {
+            $("#lydian").trigger('play')
+          }
+          else if (wordChoice == words[4]) {
+            $("#mixolydian").trigger('play')
+          }
+          else if (wordChoice == words[5]) {
+            $("#aeolian").trigger('play')
+          }
+          else if (wordChoice == words[6]) {
+            $("#locrian").trigger('play')
+          };
 //this was me trying things out that didn't work how I wanted but I want to keep them for reference:
 //  $("#letters").text(lettersArray);
   //$("#letters").text(lettersArray.join(""));
